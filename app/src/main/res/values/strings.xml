@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="hello">Hello</string>
+    <string name="rows">Rows</string>
+    <string name="columns">Columns</string>
+    <string name="mines">Mines</string>
+    <string name="medium">Medium</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="rstrt">Restart</string>
+    <string name="to_menu">Back to Menu</string>
+    <string name="game_over">Game over!</string>
+    <string name="lose">You lose!</string>
+    <string name="win">You win!</string>
+    <string name="app_text"><font size="25"><b><i>Сапёр(Minesweeper)</i></b> \n</font>
+        <font size="15"> «Сапёр» — компьютерная игра-головоломка. \n
+          Плоское или объёмное игровое поле разделено на смежные ячейки (квадраты, шестиугольники, кубы и т. п.),
+        некоторые из которых «заминированы»; количество «заминированных» ячеек известно.
+        Целью игры является открытие всех ячеек, не содержащих мины.
+        Игрок открывает ячейки, стараясь не открыть ячейку с миной. Открыв ячейку с миной, он проигрывает.
+        Мины расставляются после первого хода, поэтому проиграть на первом же ходу невозможно.
+        Если под открытой ячейкой мины нет, то в ней появляется число, показывающее, сколько ячеек,
+        соседствующих с только что открытой;
+        используя эти числа, игрок пытается рассчитать расположение мин, однако иногда даже в середине и в конце игры
+        некоторые ячейки всё же приходится открывать наугад. Если под соседними ячейками тоже нет мин,
+        то открывается некоторая «не заминированная» область до ячеек, в которых есть цифры. «Заминированные» ячейки игрок может пометить,
+        чтобы случайно не открыть их. Открыв все «не заминированные» ячейки, игрок выигрывает.\n
+        Длительное нажатие на ячейку - открытие клетки поля.\n
+        Короткое нажатие на ячейку - пометка флагом о наличии мины.</font>
+    </string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="about"><b>About</b></string>
+</resources>
