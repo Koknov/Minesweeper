@@ -15,8 +15,8 @@
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar_game"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:background="?attr/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
                     android:fitsSystemWindows="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

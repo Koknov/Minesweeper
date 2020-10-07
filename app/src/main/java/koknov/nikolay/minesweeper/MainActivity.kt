@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        easyB.setOnClickListener { createBoardActivity(GameMode.EASY) }
-        mediumB.setOnClickListener { createBoardActivity(GameMode.MEDIUM) }
-        hardB.setOnClickListener { createBoardActivity(GameMode.HARD) }
+        easyB.setOnClickListener { createGameActivity(GameMode.EASY) }
+        mediumB.setOnClickListener { createGameActivity(GameMode.MEDIUM) }
+        hardB.setOnClickListener { createGameActivity(GameMode.HARD) }
 
         val layoutParams = findViewById<ConstraintLayout>(R.id.constraint)
         layoutParams.viewTreeObserver.addOnGlobalLayoutListener {
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun createBoardActivity(mode: GameMode) {
+    private fun createGameActivity(mode: GameMode) {
         val intent = Intent(this, GameActivity::class.java).apply {
             GameActivity.run {
                 putExtra(MODE, mode.name)
