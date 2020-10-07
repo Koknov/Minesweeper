@@ -8,7 +8,7 @@ class Field {
     private static Coord size;
     private static ArrayList<Coord> allCoords;
     private static Random random = new Random();
-    public static int bombsCount = 0;
+    static int bombsCount = 0;
 
 
     static void setSize(Coord size) {
@@ -27,7 +27,7 @@ class Field {
         return allCoords;
     }
 
-    public static Coord getRandomCoord(){
+    static Coord getRandomCoord(){
         return new Coord(random.nextInt(size.x),
                 random.nextInt(size.y));
     }

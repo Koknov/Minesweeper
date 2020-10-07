@@ -10,11 +10,6 @@ class Bomb {
         fixBombCounts();
     }
 
-//    Bomb(int totalBombs, Matrix bombs) {
-//        this.totalBombs = totalBombs;
-//        bombMap = bombs;
-//    }
-
     void start(){
         bombMap = new Matrix(Cell.ZERO);
         for (int i = 0; i < totalBombs; i++)
