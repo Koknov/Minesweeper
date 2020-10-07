@@ -32,7 +32,9 @@ class GameView : View {
     private val heightRow = viewHeight!!.toFloat() / IMAGE_SIZE
     val columns = ifRotated(widthCol-1, heightRow-1).toInt()
     val rows = ifRotated(heightRow-1, widthCol-1).toInt()
-    private var lastTapTime = 0L
+    private var clickTime = 0L
+
+
     constructor(context: Context) : super(context)
     constructor(context: Context, attributeSet: AttributeSet) : super(context, attributeSet)
 
@@ -68,11 +70,11 @@ class GameView : View {
 
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
-                lastTapTime = System.currentTimeMillis()
+                clickTime = System.currentTimeMillis()
                 return true
             }
             MotionEvent.ACTION_UP -> {
-                if (System.currentTimeMillis() - lastTapTime > 200)
+                if (System.currentTimeMillis() - clickTime > 200)
                     game.open(coord)
                 else
                     game.flagged(coord)
