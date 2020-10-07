@@ -8,7 +8,6 @@ public class Game {
     private boolean firstStep;
     private int col;
     private int row;
-    int bombNum;
 
     public Game(int cols, int rows, int bombs){
         Field.setSize(new Coord(cols, rows));
@@ -16,7 +15,6 @@ public class Game {
         flag = new Flag();
         col = cols;
         row = rows;
-        bombNum = bombs;
     }
 
     public Game(Bomb bombs) {
